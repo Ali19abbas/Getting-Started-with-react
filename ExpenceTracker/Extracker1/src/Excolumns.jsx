@@ -1,20 +1,25 @@
 export default function ExColumns(){
+
+  const petrolPrice= 600;
+  const movieT=300;
+  const food=120;
+  const locationOfExpence="lucknow"
      return <div class="container text-center">
   <div class="row">
     <div class="col">
       PETROL
     </div>
     <div class="col">
-      Rs.600
+      {petrolPrice}
     </div>
   </div>
 
   <div class="row">
     <div class="col">
-      MOVIE
+      Movie
     </div>
     <div class="col">
-      Rs.200
+      {movieT}
     </div>
   </div>
 
@@ -24,10 +29,29 @@ export default function ExColumns(){
       Food
     </div>
     <div class="col">
-      Rs.100
+      {food}
     </div>
   </div>
+
+
+
+  <div class="row">
+    <div class="col">
+      LOCATION OF EXPENCE
+    </div>
+    <div class="col">
+      {locationOfExpence}
+    </div>
+  </div>
+
+
+
+
 </div>
+
+
+
+
 
 
 
