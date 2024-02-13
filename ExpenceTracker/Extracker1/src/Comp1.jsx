@@ -1,4 +1,4 @@
 export default function Comp1(){
-    return <h3>Expence Tracker</h3>
+    return <h1>Expence Tracker</h1>
 }
 
