@@ -1,0 +1,13 @@
+.container{
+    background-color: aqua;
+    justify-content: space-between;
+}
+#amount{
+    background-color: #db2525;
+    text-align: center;
+    align-content: center;
+    height: 100%;
+    margin-top: 5%;
+
+
+}
