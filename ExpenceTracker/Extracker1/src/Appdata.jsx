@@ -11,5 +11,6 @@ export default function AppData(props){
         </div>
      <h3>{props.title}</h3>
      <h3><span class="badge bg-secondary">{props.amount}</span></h3>
+     <button className='btn btn-danger' onClick={()=>{alert("button clicked")}}>Detete</button>
 </div>)
 }
