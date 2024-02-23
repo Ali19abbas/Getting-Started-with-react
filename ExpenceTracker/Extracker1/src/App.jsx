@@ -2,6 +2,9 @@
 import AppData from "./Appdata";
 
 import './App.css'
+import ExpenceForm from "./ExpenceForm";
+import user from "./ExpenceForm"
+ ExpenceForm
 
 
 function App(){
@@ -37,15 +40,23 @@ function App(){
      },
      ]
   return <div className="box">
+        <ExpenceForm/>
       <h1>EXPENCES</h1>
-     <div ><AppData title={dummyData[0].title} amount={dummyData[0].amount} date={dummyData[0].date.toISOString()}  month={dummyData[0].month} day={dummyData[0].day}  time={dummyData[0].time}/>
-     
-     
-     <AppData title={dummyData[1].title} amount={dummyData[1].amount} date={dummyData[1].date.toISOString()}  month={dummyData[1].month} day={dummyData[1].day}  time={dummyData[1].time}/>
-     
-     <AppData title={dummyData[2].title} amount={dummyData[2].amount}   month={dummyData[2].month} day={dummyData[2].day}  time={dummyData[2].time}/></div>
+       {dummyData.map((x)=>(
+         <AppData title={x.title} amount={x.amount}   month={x.month} day={x.day}  time={x.time}/>
+
+       ))}
      </div>
 
 }
 
 export default App;
+
+
+/*<div ><AppData title={dummyData[0].title} amount={dummyData[0].amount} date={dummyData[0].date.toISOString()}  month={dummyData[0].month} day={dummyData[0].day}  time={dummyData[0].time}/>
+     
+     
+     <AppData title={dummyData[1].title} amount={dummyData[1].amount} date={dummyData[1].date.toISOString()}  month={dummyData[1].month} day={dummyData[1].day}  time={dummyData[1].time}/>
+     
+     <AppData title={dummyData[2].title} amount={dummyData[2].amount}   month={dummyData[2].month} day={dummyData[2].day}  time={dummyData[2].time}/></div>
+     */
