@@ -23,6 +23,6 @@ export default function AppData(props){
 
      <h3>{title}</h3>
      <h3><span class="badge bg-secondary">{amount}</span></h3>
-     <button className='btn btn-danger' onClick={eventhandle}>Detete</button>
+     <button className='btn btn-danger' onClick={eventhandle}>Update</button>
 </div>)
 }

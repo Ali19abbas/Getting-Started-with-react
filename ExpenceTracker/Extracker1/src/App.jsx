@@ -38,12 +38,21 @@ function App(){
     time:   "10-39 Am",
     locationOfExpence: "Lucknow"
      },
+     {
+     id: "e5",
+     title: "New Desk (Wooden)",
+     amount: 450,
+     month : "SEPTEMBER",
+     day:    "Friday",
+     time:   "10-39 Am",
+     locationOfExpence: "Lucknow"
+      }
      ]
   return <div className="box">
         <ExpenceForm/>
       <h1>EXPENCES</h1>
        {dummyData.map((x)=>(
-         <AppData title={x.title} amount={x.amount}   month={x.month} day={x.day}  time={x.time}/>
+         <AppData title={x.title} amount={x.amount}   month={x.month} day={x.day}  time={x.time}  key="{x.id}"/>
 
        ))}
      </div>
